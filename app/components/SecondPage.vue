@@ -44,6 +44,34 @@
           <FloatTextField hint="hint" v-model="msg"/>
           <FloatTextField hint="hint" v-model="msg"/>
         </StackLayout>
+        <StackLayout class="form-group">
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+        </StackLayout>
+        <StackLayout class="form-group">
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+        </StackLayout>
+        <StackLayout class="form-group">
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+        </StackLayout>
+        <StackLayout class="form-group">
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+          <FloatTextField hint="hint" v-model="msg"/>
+        </StackLayout>
       </StackLayout>
     </ScrollView>
   </Page>
@@ -65,12 +93,11 @@ export default {
 </script>
 
 <style scoped>
-
 .form-group {
-    border-color: black;
-    border-width: 2;
-    border-radius: 5;
-    margin: 10;
+  border-color: black;
+  border-width: 2;
+  border-radius: 5;
+  margin: 10;
 }
 
 ActionBar {
