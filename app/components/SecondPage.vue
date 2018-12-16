@@ -1,7 +1,8 @@
 <template>
   <Page>
-    <ScrollView>
-      <StackLayout>
+
+    <ListView for="item in listOfItems" @itemTap="onItemTap">
+      <v-template>
         <StackLayout class="form-group">
           <FloatTextField hint="hint" v-model="msg"/>
           <FloatTextField hint="hint" v-model="msg"/>
@@ -9,43 +10,8 @@
           <FloatTextField hint="hint" v-model="msg"/>
           <FloatTextField hint="hint" v-model="msg"/>
         </StackLayout>
-        <StackLayout class="form-group">
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-        </StackLayout>
-        <StackLayout class="form-group">
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-        </StackLayout>
-        <StackLayout class="form-group">
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-        </StackLayout>
-        <StackLayout class="form-group">
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-        </StackLayout>
-        <StackLayout class="form-group">
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-          <FloatTextField hint="hint" v-model="msg"/>
-        </StackLayout>
-      </StackLayout>
-    </ScrollView>
+      </v-template>
+    </ListView>
   </Page>
 </template>
 
@@ -55,6 +21,7 @@ import FloatTextField from "./sub/FloatText";
 export default {
   data() {
     return {
+      listOfItems: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       msg: "Hello World!"
     };
   },
@@ -65,12 +32,11 @@ export default {
 </script>
 
 <style scoped>
-
 .form-group {
-    border-color: black;
-    border-width: 2;
-    border-radius: 5;
-    margin: 10;
+  border-color: black;
+  border-width: 2;
+  border-radius: 5;
+  margin: 10;
 }
 
 ActionBar {
