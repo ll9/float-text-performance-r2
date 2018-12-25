@@ -7,11 +7,13 @@
         :keyboardType="keyboardType" 
         @textChange="onInput" 
         @focus="onFocus" 
+        @tap="onFocus" 
         @blur="onBlur" 
         row="1"  
         borderBottomWidth="2" 
         borderBottomColor="#cec8c8" 
         padding="2"
+        :editable="editable"
         ></TextField>
     </GridLayout>
 </template>
@@ -68,6 +70,7 @@ export default Vue.extend({
     onFocus() {
       this.floatLabel();
       this.$emit("focus");
+      console.log(this.editable);
     },
     onBlur() {
       this.defloatLabel();
